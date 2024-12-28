@@ -11,6 +11,7 @@ public class ClassA {
 	private void method3() {
 	System.out.println("3");	
 	}
+
 	private void india() {
 		System.out.println("IND");
 
@@ -22,6 +23,18 @@ public class ClassA {
 	private void pakistan() {
 		System.out.println("PAK");
 
+	}	
+	private void tamilNadu() {
+		System.out.println("Tamil");
+
 	}
+	private void kerala() {
+		System.out.println("Malayalam");
+
+	}
+	private void andhra() {
+		System.out.println("Telugu");
+
 	
+}
 }
