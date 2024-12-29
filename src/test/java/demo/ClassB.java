@@ -1,5 +1,6 @@
 package demo;
 
+<<<<<<< HEAD
 import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.URL;
@@ -10,6 +11,11 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+=======
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+>>>>>>> 780e63846c992df450739d19a947ace25afa5a93
 
 public class ClassB {
 
@@ -25,6 +31,7 @@ public class ClassB {
 		System.out.println("MT");
 
 	}
+<<<<<<< HEAD
 	public static void main(String[] args) throws IOException {
 		
 		WebDriver driver=new ChromeDriver();
@@ -51,4 +58,34 @@ public class ClassB {
 		}
 		System.out.println("Broken link count :"+count);
 	}
+=======
+	
+	public static void main(String[] args) {
+		
+		
+		ChromeOptions option=new ChromeOptions();
+		//to handle the Chrome popup msg
+		option.setExperimentalOption("excludeSwitches",new String[] {"enable-automation"});
+		//to maximize the window
+		option.addArguments("--start-maximized");
+		//to handle the chrome browser extensions
+		option.addArguments("--disable-extensions");
+		//to habdle notification like camera , microphones, location
+		option.addArguments("--disable-notification");
+		//to lauch the browser in incognito
+		option.addArguments("--incognito");
+		//to execute the program without launching browser
+		option.addArguments("--headless");
+		WebDriver driver=new ChromeDriver(option);
+		driver.get("https://www.facebook.com/");
+		System.out.println(driver.getCurrentUrl()+driver.getTitle());
+		
+		
+		
+		
+		
+	}
+	
+	
+>>>>>>> 780e63846c992df450739d19a947ace25afa5a93
 }

@@ -5,6 +5,10 @@
   <version>0.0.1-SNAPSHOT</version>
   
   <dependencies>
+<<<<<<< HEAD
+=======
+	  
+>>>>>>> 780e63846c992df450739d19a947ace25afa5a93
 	  <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 <dependency>
     <groupId>org.seleniumhq.selenium</groupId>
@@ -12,6 +16,14 @@
     <version>4.12.1</version>
 </dependency>
 
+<<<<<<< HEAD
   </dependencies>
   
+=======
+	  
+	  
+  </dependencies>
+  
+  
+>>>>>>> 780e63846c992df450739d19a947ace25afa5a93
 </project>
